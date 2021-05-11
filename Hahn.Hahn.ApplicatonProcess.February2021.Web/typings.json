@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "bootstrap-datepicker": "registry:dt/bootstrap-datepicker#0.0.0+20170102224147",
+    "toastr": "registry:dt/toastr#2.1.3+20170305192644",
+    "validatejs": "github:aurelia/validatejs/lib/validatejs.d.ts"
+  }
+}

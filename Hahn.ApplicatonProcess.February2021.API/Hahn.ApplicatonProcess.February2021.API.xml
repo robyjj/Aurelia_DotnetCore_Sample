@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicatonProcess.February2021.API</name>
+    </assembly>
+    <members>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Get">
+            <summary>
+            Returns the complete list of assets
+            </summary>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Get(Hahn.ApplicatonProcess.February2021.Models.AssetParameters)">
+            <summary>
+            Filters the list of assets based on the parameters
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Get(System.Int32)">
+            <summary>
+            Returns a single asset information based on the Asset ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Post(Hahn.ApplicatonProcess.February2021.Models.Asset)">
+            <summary>
+            Creates an Asset
+            </summary>
+            <remarks>
+            Sample request:        
+            
+                POST /Asset
+                {        
+                  "assetName": "Asset - Test",
+                  "department": 1,
+                  "countryOfDepartment": "Germany",        
+                  "eMailAdressOfDepartment": "germany@gmail.com",
+                  "purchaseDate": "2021-05-01",
+                  "broken": false,
+                }
+            </remarks>
+            <param name="asset"></param>        
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Put(System.Int32,Hahn.ApplicatonProcess.February2021.Models.Asset)">
+            <summary>
+            Updates an Asset
+            </summary>
+            <remarks>
+            Sample request:        
+            
+                PUT /Asset/2
+                {        
+                  "assetName": "Asset - Test",
+                  "department": 1,
+                  "countryOfDepartment": "Germany",        
+                  "eMailAdressOfDepartment": "germany@gmail.com",
+                  "purchaseDate": "2021-05-01",
+                  "broken": false,
+                }
+            </remarks>
+            <param name="id"></param>
+            <param name="asset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.Delete(System.Int32)">
+            <summary>
+            Deletes an asset based on ID
+            </summary>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicatonProcess.February2021.API.Controllers.AssetController.DeleteMuliple(System.Int32[])">
+            <summary>        
+            Deletes multiple assets based on input ID's
+            </summary>
+            <remarks>
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="T:Hahn.ApplicatonProcess.February2021.API.Filters.AuditActionFilter">
+            <summary>
+            Logs the Request and Response of the API
+            TODO : Setup a correlation id to track individual request and response , also log request body
+            </summary>
+        </member>
+    </members>
+</doc>
